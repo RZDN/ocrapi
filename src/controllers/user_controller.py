@@ -1,4 +1,3 @@
-import os
 import flask
 from flask import request, Response
 from bson import json_util

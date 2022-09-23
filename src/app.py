@@ -1,19 +1,8 @@
-from distutils.log import debug
-from json import dumps
-import json
-from logging.config import dictConfig
-import re
-from sched import scheduler
 import flask
 from flask import request, Response
 from bson import json_util
 import pymongo
-from flask_cors import CORS
-from flask_apscheduler import APScheduler
-import datetime
-from bson.objectid import ObjectId
 import os
-from paddleocr import PaddleOCR, draw_ocr
 from controllers.user_controller import USERS
 from controllers.consultation_controller import CONSULTATIOS
 from controllers.history_controller import STORIES
