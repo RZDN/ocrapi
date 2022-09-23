@@ -392,13 +392,9 @@ def image():
         return "Image read"
 
 
-@app.route("/test", methods=["GET"])
+@app.route("/", methods=["GET"])
 def getTest():
-    path2 = os.path.dirname(os.path.abspath(__file__))
-    pa = path2.replace("\\", "/")
-    valor = '/image.jpeg'
-    print(pa + valor)
-    return {"message": "Mensage de test"}
+    return {"message": "API UPC OCR"}
 
 
 app.register_blueprint(USERS)
